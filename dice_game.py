@@ -3,7 +3,7 @@ import random
 while True:
     first_dice = random.randint(1,6)
     second_dice = random.randint(1,6)
-    user_choice = input("Roll the dice? (y/n): ")
+    user_choice = input("Roll the dice? (y/n): ").lower()
     if user_choice == "y":
         print(f"({first_dice}, {second_dice})")
         continue
